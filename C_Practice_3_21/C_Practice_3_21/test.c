@@ -26,7 +26,9 @@
 //	int count = 0;
 //	for (i = 1; i <= 100;i++)
 //	{
-//		if (i % 10 == 9 || i / 10 == 9)
+//		if (i % 10 == 9 )
+//			count++;
+//		if(i / 10 == 9)
 //			count++;
 //	}
 //	printf(" 1到 100 的所有整数中数字9有%d个\n",count);
@@ -78,7 +80,8 @@ int main()
 	{
 		scanf("%d", &arr[i]);
 	}
-	for (i = 0; i < 10; i++)
+	max = arr[0];
+	for (i = 1; i < 9; i++)
 	{
 		if (arr[i] > max)
 			max = arr[i];
